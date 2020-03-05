@@ -1,0 +1,26 @@
+[
+  {
+    "name": "General",
+    "breed" : "yorkie",
+    "foods": {
+      "likes": ["fish skin", "cat food"],
+      "hates": ["green veggies"]
+    }
+  },
+  {
+    "name": "Glen",
+    "breed" : "poodle",
+    "foods": {
+      "likes": ["wet dog food"],
+      "hates": ["dry dog food"]
+    }
+  },
+  {
+    "name": "Spanky",
+    "breed" : "schnoodle",
+    "foods": {
+      "likes": ["pretzels"],
+      "hates": ["olives"]
+    }
+  }
+]

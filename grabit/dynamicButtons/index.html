@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>www.ui-design-engineering.com (dynamic buttons)</title>
+	<meta name="description" content="Adam L Marsh; UI/UX Designer and Developer, www.adam-marsh.com, www.ui-design-engineering.com, www.myuikit.com, front-end web design and development.">
+	<meta name="author" content="ui-design-engineering.com www.myuikit.com">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <style type="text/css">
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 auto;
+        background-color:#ffffff;
+    }
+    div.body {
+        flex: 1 0 auto;
+        /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+        padding: 20px;
+    }
+    .web * {
+	    position: absolute !important;
+	    margin-top: -2000px !important;
+	    margin-left: -1000px !important;
+	    z-index: 0 !important;
+	    color:transparent !important;
+    }
+    .gray * {
+        color: #cccccc;
+    }
+
+    .black * {
+        color: #000000;
+    }
+
+    h2 {
+        color: green;
+    }
+    </style>
+    <script type="text/javascript">
+    function Reveal(it, box) {
+        var vis = (box.checked) ? "block" : "none";
+        document.getElementById(it).style.display = vis;
+    }
+
+    function Hide(it, box) {
+        var vis = (box.checked) ? "none" : "none";
+        document.getElementById(it).style.display = vis;
+    }
+    </script>
+</head>
+
+<body>
+    <div class="body">
+        <h2>View Source to copy code</h2>
+        <hr/>
+        <h3>Dynamic Form Option Buttons</h3>
+        <h4>Button values that change a div's visibility</h4>
+        <form action="">
+            <table style="border:1px solid #5F7147;" width="400" cellpadding="3" cellspacing="0">
+                <tr>
+                    <th>
+                        <input name="mype" type="radio" onclick="Hide('div2', this); Reveal('didfv1', this)" value="value1" checked="checked" /> value&nbsp;1
+                    </th>
+                    <th>
+                        <input type="radio" name="mype" value="value2" onclick="Hide('didfv1', this); Reveal('div2', this)" /> value&nbsp;2
+                    </th>
+                    <th>
+                        <input type="checkbox" name="modtype" value="value3" onclick="Reveal('div3', this)" /> value&nbsp;3
+                    </th>
+                    <th>
+                        <input type="checkbox" name="modtype" value="value4" onclick="Reveal('div4', this)" /> value&nbsp;4
+                    </th>
+                    <th>
+                        <input type="checkbox" name="modtype" value="value5" onclick="Reveal('div5', this)" /> value&nbsp;5
+                    </th>
+                </tr>
+            </table>
+            <br/>
+            <div style="border:1px solid #5F7147; background-color:#f9f9f5; width:80%; margin-top:4px; padding:4px;">
+                <div id="didfv1" style="display:block; border-bottom:1px dashed #5F7147; padding-bottom:3px;">Show Div 1&nbsp;&nbsp;(radio 1)</div>
+                <div id="div2" style="display:none; border-bottom:1px dashed #5F7147; padding-bottom:3px;">Show Div 2&nbsp;&nbsp;(radio 2)</div>
+                <div id="div3" style="display:none; padding-top:3px;">Show Div 3&nbsp;&nbsp;(checkbox 3)</div>
+                <div id="div4" style="display:none; padding-top:3px;">Show Div 4&nbsp;&nbsp;(checkbox 4)</div>
+                <div id="div5" style="display:none; padding-top:3px;">Show Div 5&nbsp;&nbsp;(checkbox 5)</div>
+            </div>
+        </form>
+        <p>&nbsp;</p>
+        <br class="clear" />
+        <h3>Smart Checkbox</h3>
+        <h4>JQuery toggle function to enable/disable child elements</h4>
+        <script type="text/javascript">
+        $().ready(function() {
+            //code to hide topic selection, disable for demo
+            var enablePOS = $("#enablePOS");
+            // newsletter topics are optional, hide at first
+            var inital = enablePOS.is(":checked");
+            var topics = $("#enablePOS_topics")[inital ? "removeClass" : "addClass"]("gray");
+            var topicInputs = topics.find("input").attr("disabled", !inital);
+            // show when newsletter is checked
+            enablePOS.click(function() {
+                topics[this.checked ? "removeClass" : "addClass"]("gray");
+                topicInputs.attr("disabled", !this.checked);
+            });
+        });
+        </script>
+        <div class="posSettings">
+            <fieldset id="na">
+                <legend>
+                    <input type="checkbox" id="enablePOS" name="enablePOS" />Enable POS</legend>
+                <div id="enablePOS_topics">
+                    <input type="checkbox" id="topic_marketflash" value="*Marketflash " name="topic" />
+                    <label>Pre-Tax</label>
+                    <input type="checkbox" id="topic_photo" value=" *Photoshooter " name="topic" />
+                    <label>Discount per Unit</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+</body>
+
+</html>

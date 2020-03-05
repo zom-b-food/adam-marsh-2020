@@ -1,0 +1,144 @@
+/** 
+ * Slideshow style rules.
+ */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+div.body {
+    flex: 1 0 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
+
+#pageContainer {
+    margin: 0 auto;
+}
+
+#slideshow {
+    width: 620px;
+    height: 587px;
+    position: relative;
+    margin-top: 16px;
+}
+
+#slideshow #slidesContainer {
+    margin: 0 auto;
+    width: 500px;
+    height: 587px;
+    overflow: auto;
+    /* allow scrollbar */
+    position: relative;
+}
+
+#slideshow #slidesContainer .slide {
+    margin: 0 auto;
+    width: 500px;
+    /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+    height: 587px;
+}
+
+
+/** 
+ * Slideshow controls style rules.
+ */
+
+.control {
+    display: block;
+    width: 55px;
+    height: 55px;
+    text-indent: -10000px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 142px;
+}
+
+#leftControl {
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    background: transparent url(control_left.jpg) no-repeat 0 0;
+}
+
+#rightControl {
+    top: 0;
+    right: 0;
+    background: transparent url(control_right.jpg) no-repeat 0 0;
+}
+
+#leftControl:hover {
+    background: transparent url(control_left_over.jpg) no-repeat 0 0;
+}
+
+#rightControl:hover {
+    background: transparent url(control_right_over.jpg) no-repeat 0 0;
+}
+
+.slide img {
+    float: right;
+    margin: 0;
+}
+
+.closeButton {
+    position: absolute;
+    margin-left: 790px;
+    margin-top: 18px;
+}
+
+input.buttonGH,
+input.buttonGH_hover,
+input.buttonGHcancel,
+input.buttonGHcancel_hover,
+input.buttonGHgo,
+input.buttonGHgo_hover {
+    background-image: url("mem_subback_hov.gif");
+    background-repeat: repeat-x;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-family: Tahoma, verdana, san-serif;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    margin: 5px 5px 0 2px;
+    overflow: visible;
+    padding: 0 5px 1px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+input.buttonGH {
+    background-image: url("mem_subback.gif");
+}
+
+input.buttonGH:hover {
+    background-image: url("mem_subback_hov.gif");
+}
+
+input.buttonGH,
+input.buttonGHcancel,
+input.buttonGHgo,
+a.buttonGH,
+a.buttonGHcancel {
+    border-color: #ADD6D5 #0E5D7E #0E5D7E #ADD6D5;
+}
+
+input.buttonGH,
+input.buttonGHcancel,
+input.buttonGH_hover,
+input.buttonGHcancel_hover,
+input.buttonGHgo,
+input.buttonGHgo_hover,
+a.buttonGH,
+a.buttonGH:visited,
+a.buttonGH:hover,
+a.buttonGHcancel,
+a.buttonGHcancel:visited,
+a.buttonGHcancel:hover {
+    background-color: #BFE1D8;
+    color: #1D4A4A;
+}

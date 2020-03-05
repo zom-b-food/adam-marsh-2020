@@ -1,0 +1,42 @@
+#slideshow img {
+    padding: 0px;
+    border: 0px solid #ccc;
+    background-color: #eee;
+    display: none;
+    height: 333px;
+    width: 500px;
+}
+
+#slideshow img.first {
+    display: block
+}
+
+#mainUppr {
+}
+
+#nav {
+    z-index: 50;
+    position: absolute;
+    bottom: 7px;
+    right: 5px
+}
+
+#nav a {
+    margin: 0 2px;
+    padding: 1px 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-decoration: none;
+    font: 10px verdana;
+    font-weight: bold;
+    color: #3D8794;
+}
+
+#nav a.activeSlide {
+    background: #488f91;
+    color: #fff
+}
+
+#nav a:focus {
+    outline: none;
+}

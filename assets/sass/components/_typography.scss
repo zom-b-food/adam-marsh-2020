@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'gudea';
+  src: url('../fonts/gudea-regular-webfont.eot');
+  src: url('../fonts/gudea-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gudea-regular-webfont.woff') format('woff'), url('../fonts/gudea-regular-webfont.ttf') format('truetype'), url('../fonts/gudea-regular-webfont.svg#gudea-regular') format('svg');
+
+}
+
+@font-face {
+  font-family: 'asap';
+  src: url('../fonts/asap-regular-webfont.eot');
+  src: url('../fonts/asap-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/asap-regular-webfont.woff') format('woff'), url('../fonts/asap-regular-webfont.ttf') format('truetype'), url('../fonts/asap-regular-webfont.svg#asap-regular') format('svg');
+
+}
+
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.lsf-icon:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+
+@font-face {
+  font-family: 'LigatureSymbols';
+  src: url('../fonts/LigatureSymbols-2.11.eot');
+  src: url('../fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'), url('../fonts/LigatureSymbols-2.11.woff') format('woff'), url('../fonts/LigatureSymbols-2.11.ttf') format('truetype'), url('../fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+  src: url('../fonts/LigatureSymbols-2.11.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjord One', serif;
+  font-weight: 600;
+  color: $black;
+  margin: 12px 0;
+  letter-spacing: 0.0001em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 22px;
+
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h5, h6 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+em {
+  color: #d05;
+}
+
+@media screen and (max-width: 740px) {
+  h1 {
+    font-size: 19px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  h4 {
+    font-size: 13px !important;
+  }
+  h3.rb {
+    margin-left: 10px;
+    text-align:left;
+  }
+  h3.lb {
+    margin-right: 10px;
+    text-align:right;
+  }
+}
+
+h2.bumpdown {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.body {
+  text-decoration: underline;
+}
+
+html {
+  font-family: "asap", sans-serif;
+  font-weight: normal;
+  color: $off-black;
+  line-height: 1.5;
+
+  @media only screen and (min-width: 0) {
+    font-size: 13px;
+  }
+
+  @media only screen and (min-width: $medium-screen) {
+    font-size: 13px;
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    font-size: 13px;
+  }
+
+}
+
+// Text Styles
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 75%;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.flow-text {
+  font-weight: 300;
+  $i: 0;
+  @while $i <= $intervals {
+    @media only screen and (min-width: 360 + ($i * $interval-size)) {
+      font-size: 1.2rem * (1 + (.02 * $i));
+    }
+    $i: $i + 1;
+  }
+
+  // Handle below 360px screen
+  @media only screen and (max-width: 360px) {
+    font-size: 1.2rem;
+  }
+}
+
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.lsf-icon:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 112%;
+  border: 2px solid $smoke;
+  padding: 3px 5px 3px;
+  border-radius: $border-radius-small;
+  color: $cream;
+  background-color: $nightblue;
+  line-height: 20px;
+  opacity: .7;
+}
+
+.lsf-icon.memo:before {
+  content: '\E08d';
+
+}
+
+.lsf-icon.sns:before {
+  content: '\E11f';
+
+}
+
+.lsf-icon.magic:before {
+  content: '\E089';
+
+}
+
+.lsf-icon.book:before {
+  content: '\E020';
+
+}
+
+.lsf-icon.home:before {
+  content: '\E072';
+
+}
+
+.lsf-icon.college:before {
+  content: '\E174';
+
+}
+
+.lsf-icon.login:before {
+  content: '\E087';
+
+}
+
+.lsf-icon.mail:before {
+  content: '\E08a';
+
+}
+
+.lsf-icon.wordpress:before {
+  content: '\E171';
+
+}
+
+.lsf-icon.sitemap:before {
+  content: '\E16d';
+
+}
+
+.lsf-icon.twinkle:before {
+  content: '\E073';
+
+}
+
+.lsf-icon.param:before {
+  content: '\E09c';
+
+}
+
+.lsf-icon.magic:before {
+  content: '\E089';
+
+}
+
+.lsf-icon.book:before {
+  content: '\E020';
+
+}
+
+.lsf-icon.home:before {
+  content: '\E072';
+
+}
+
+.lsf-icon.light:before {
+  content: '\E14c';
+
+}
+
+.lsf-icon.light:before {
+  content: '\E14c';
+
+}
+
+.lsf-icon.bell:before {
+  content: '\E014';
+
+}
+
+.lsf-icon.you:before {
+  content: '\E137';
+
+}
+
+.lsf-icon.camera:before {
+  content: '\E026';
+
+}
+
+.lsf-icon.grunge:before {
+  content: '\E14e';
+
+}
+
+.lsf-icon.college:before {
+  content: '\E174';
+
+}
+
+.lsf-icon.login:before {
+  content: '\E087';
+
+}
+
+.lsf-icon.mail:before {
+  content: '\E08a';
+
+}
+
+.lsf-icon.app:before {
+  content: '\E009';
+
+}
+
+.lsf-icon.sns:before {
+  content: '\E11f';
+
+}
+
+.lsf-icon.sitemap:before {
+  content: '\E16d';
+
+}
+
+.lsf-icon.twinkle:before {
+  content: '\E073';
+
+}

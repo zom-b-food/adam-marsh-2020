@@ -1,0 +1,261 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+div.body {
+    flex: 1 0 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    font-weight: 300;
+    color: #fff;
+    background-image: -webkit-linear-gradient(bottom, #a95706, #cf7a28);
+    background-image: -moz-linear-gradient(bottom, #a95706, #cf7a28);
+    background-image: -ms-linear-gradient(bottom, #a95706, #cf7a28);
+    background-image: linear-gradient(bottom, #a95706, #cf7a28);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+td {
+    font-weight: 300;
+}
+
+td,
+th {
+    padding: 0.15em 1.25em 0.15em 0.25em;
+    border: 0 none;
+    font-size: 13px;
+    line-height: 30px;
+    width: auto;
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(240, 240, 240);
+}
+
+
+/* Table Sorting */
+
+th.table-sort {
+    padding-right: 36px;
+    text-align: left;
+    cursor: pointer;
+}
+
+th.table-sort:hover {
+    background-image: -webkit-linear-gradient(bottom, #834407, #a95706);
+    background-image: -moz-linear-gradient(bottom, #834407, #a95706);
+    background-image: -ms-linear-gradient(bottom, #834407, #a95706);
+    background-image: linear-gradient(bottom, #834407, #a95706);
+}
+
+.table-sort-field {
+    position: relative;
+    padding: 1px;
+}
+
+.table-sort-control {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0));
+    height: 32px;
+    width: 16px;
+    position: absolute;
+    top: 0;
+    right: -36px;
+}
+
+.table-sort-up,
+.table-sort-down {
+    border: 3px solid transparent;
+    position: absolute;
+    right: 6px;
+}
+
+.table-sort-up {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    top: 8px;
+}
+
+.table-sort-down {
+    border-top-color: rgba(255, 255, 255, 0.3);
+    top: 19px;
+}
+
+.table-sort-order-asc .table-sort-up {
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+.table-sort-order-des .table-sort-down {
+    border-top-color: rgba(255, 255, 255, 1);
+}
+
+.table-sort-highlight {
+    color: #fff;
+    background: #aeaeae;
+}
+
+
+/* tables
+----------------------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    #flip-scroll .cf:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+    #flip-scroll * html .cf {
+        zoom: 1;
+    }
+    #flip-scroll *:first-child+html .cf {
+        zoom: 1;
+    }
+    #flip-scroll table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    #flip-scroll th,
+    #flip-scroll td {
+        margin: 0;
+        vertical-align: top;
+    }
+    #flip-scroll th {
+        text-align: left;
+    }
+    #flip-scroll table {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    #flip-scroll thead {
+        display: block;
+        float: left;
+    }
+    #flip-scroll tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    #flip-scroll thead tr {
+        display: block;
+    }
+    #flip-scroll th {
+        display: block;
+        text-align: right;
+    }
+    #flip-scroll tbody tr {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #flip-scroll td {
+        display: block;
+        min-height: 1.25em;
+        text-align: left;
+    }
+    /* sort out borders */
+    #flip-scroll th {
+        border-bottom: 0;
+        border-left: 0;
+    }
+    #flip-scroll td {
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+    #flip-scroll tbody tr {
+        border-left: 1px solid #babcbf;
+    }
+    #flip-scroll th:last-child,
+    #flip-scroll td:last-child {
+        border-bottom: 1px solid #babcbf;
+    }
+}
+
+th a:hover {
+    color: #000;
+}
+
+th.asc a,
+th.desc a {
+    margin-right: .75em;
+}
+
+th.asc a:after,
+th.desc a:after {
+    display: block;
+    position: absolute;
+    right: 0em;
+    top: 0;
+    font-size: 0.75em;
+}
+
+th.asc a:after {
+    content: '?';
+}
+
+th.desc a:after {
+    content: '?';
+}
+
+tr.pager td {
+    padding: 0 0.25em 0 0;
+}
+
+
+/* -- Inputs -- */
+
+input[type=search] {
+    background: #fff;
+    /*fallback for non-CSS3 browsers*/
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eee) to(#fff));
+    /*old webkit*/
+    background: -webkit-linear-gradient(#eee, #fff);
+    /*new webkit*/
+    background: -moz-linear-gradient(#eee, #fff);
+    /*gecko*/
+    background: -ms-linear-gradient(#eeeeee, #ffffff);
+    /*IE10*/
+    background: -o-linear-gradient(#eee, #fff);
+    /*opera 11.10+*/
+    background: linear-gradient(#eee, #fff);
+    /*future CSS3 browsers*/
+    border: 1px solid #848484;
+    padding: 4px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}

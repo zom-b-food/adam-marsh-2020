@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>www.adam-marsh.com (flyup footer)</title>
+	<meta name="description" content="Adam L Marsh; UI/UX Designer and Developer, www.adam-marsh.com, www.ui-design-engineering.com, www.myuikit.com, front-end web design and development.">
+	<meta name="author" content="ui-design-engineering.com www.myuikit.com">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="footerFly.js"></script>
+
+    <style type="text/css">
+    html {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 auto;
+        background-color:#ffffff;
+    }
+    div.body {
+        flex: 1 0 auto;
+        /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+        padding: 20px;
+    }
+    .footer {
+        background-color: #324757;
+        color: #cdcfd0;
+        height: 130px;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .chooserFly {
+        font-size: 12px;
+        padding-left: 55px;
+        color: #cdcfd0;
+    }
+
+    #footerFly {
+        margin-left: 80px;
+        z-index: 999;
+    }
+
+    #region-picker {
+        color: #cad2d2;
+        cursor: pointer;
+        height: 14px;
+    }
+
+    img {
+        padding-right: 5px;
+    }
+
+    #locale-select {
+        position: absolute;
+        margin-top: 680px;
+        background-color: #FFFFFF;
+        display: none;
+        padding: 20px 20px 0;
+        width: 560px;
+        z-index: 599;
+    }
+
+    .dropshadow-dark {
+        box-shadow: 4px 4px 4px #e4e2dc;
+        border: 2px solid #e4e2dc;
+    }
+
+    .marginCountry {
+        font-size: 12px;
+        padding-top: 40px;
+        text-transform: capitalize;
+        color: #333333;
+        float: right;
+        padding-right: 22px;
+    }
+    .footer {
+        flex-shrink: 0;
+        /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+        padding: 20px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    p {
+        margin: 0 0 20px 0;
+    }
+
+    footer {
+        background: #42A5F5;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+      <p><a href="footerFly.zip">Download</a></p>
+      <hr/>
+      <div class="wrapper">
+          <h3>Click the Flag icon in the footer. </h3>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer">
+          <div class="chooserFly" id="region-picker">
+              <img src="flag_USA.png" alt="language icon" /> USA <img src="upArrow.png" alt="up arrow" />
+              <div id="footerFly">
+                  <div class="dropshadow-dark" id="locale-select">
+                      <h1>Your Header Here</h1>
+                      <span class="marginCountry locale-link">close</span>
+                      <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                      <h2>Hello</h2>
+                      <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                      <p>&nbsp;</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>

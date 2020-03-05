@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Champ",
+    "breed" : "pug",
+    "foods": {
+      "likes": ["fresh food"],
+      "hates": ["stale food"]
+    }
+  },
+  {
+    "name": "Pupster",
+    "breed" : "schnoodle",
+    "foods": {
+      "likes": ["tomatoes", "peas"],
+      "hates": ["bread"]
+    }
+  },
+  {
+    "name": "Tux",
+    "breed" : "schnauzer",
+    "foods": {
+      "likes": ["fancy dishes"],
+      "hates": ["basic dog food"]
+    }
+  }
+]

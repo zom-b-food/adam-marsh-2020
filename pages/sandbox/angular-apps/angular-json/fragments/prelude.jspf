@@ -1,0 +1,6 @@
+<?php include "tags.phpf"; ?>
+
+
+<?php include "mobile-detect.phpf"; ?>
+<fmt:setLocale value="en_US" scope="session"/>
+<c:set var="contextPath" value="${pageContext.servletContext.contextPath}" scope="request"/>

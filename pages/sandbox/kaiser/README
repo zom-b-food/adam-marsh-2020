@@ -1,0 +1,16 @@
+Page was built using the UI-Kit framework with SCSS and Grunt.
+Feel free to look at the Gruntfile.js to see how the final,
+compiled css and js files are packaged.
+
+Global and framework m.q. breakpoints are defined in
+_mixins.scss and _mediaqueries.scss. Custom classes, media
+queries and all framework overrides are in custom.scss. 
+
+Project required Gotham Book font which is in _fonts-icons.scss
+(the actual font is in the fonts folder). The only icons used 
+are part of the fontawesome offering. Jquery is accessed
+via CDN link used on the home page (home.html).
+
+Thank you for viewing.
+:)
+Adam

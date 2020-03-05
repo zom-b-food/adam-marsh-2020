@@ -1,0 +1,62 @@
+
+@import "variables";
+@import "mixins";
+// Typography
+// --------------------------------------------------
+
+
+@font-face {
+font-family: 'GothamBook';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Book'), url('GOTHAMBOOK.woff') format('woff');
+}
+@font-face {
+font-family: 'GothamMed';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Medium'), url('Gotham Medium.otf') format('otf');
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  sub,
+  .sub {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: 1;
+    color: $headings-color;
+  }
+
+  small,
+  .small {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: 1;
+    color: $headings-small-color;
+  }
+}
+p, td, th, a, li, label, body, div, ul > li, button {
+  font-family: $base-body-font-family;
+  font-weight: $base-body-font-weight;
+  font-size: $base-body-font-size;
+  line-height: $base-body-line-height;
+  color: $base-body-color;
+}
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vacation>
+    <stops>
+        <city>Sayulita</city>
+        <state>Nayarit</state>
+        <country>Mexico</country>
+        <company>Columbia</company>
+        <price>10.90</price>
+        <year>1985</year>
+    </stops>
+    <stops>
+        <city>Puerto Vallarta</city>
+        <state>Jalisco</state>
+        <country>Mexico</country>
+        <company>CBS Records</company>
+        <price>9.90</price>
+        <year>1988</year>
+    </stops>
+    <stops>
+        <city>Vancouver</city>
+        <state>British Columbia</state>
+        <country>Canada</country>
+        <company>RCA</company>
+        <price>9.90</price>
+        <year>1982</year>
+    </stops>
+    <stops>
+        <city>Miami</city>
+        <state>Florida</state>
+        <country>USA</country>
+        <company>BMG</company>
+        <price>9.90</price>
+        <year>1997</year>
+    </stops>
+    <stops>
+        <city>Watford</city>
+        <state>Middlesex</state>
+        <country>UK</country>
+        <company>Polydor</company>
+        <price>10.90</price>
+        <year>1998</year>
+    </stops>
+    <stops>
+        <city>Juneau</city>
+        <state>Alaska</state>
+        <country>USA</country>
+        <company>CBS</company>
+        <price>8.10</price>
+        <year>1973</year>
+    </stops>
+    <stops>
+        <city>Chicago</city>
+        <state>Illinois</state>
+        <country>USA</country>
+        <company>Polydor</company>
+        <price>10.80</price>
+        <year>1996</year>
+    </stops>
+    <stops>
+        <city>Toulon</city>
+        <state>Provence</state>
+        <country>France</country>
+        <company>Mega</company>
+        <price>10.90</price>
+        <year>1995</year>
+    </stops>
+    <stops>
+        <city>Aix</city>
+        <state>Provence</state>
+        <country>France</country>
+        <company>Grammy</company>
+        <price>10.20</price>
+        <year>1999</year>
+    </stops>
+    <stops>
+        <city>Los Angeles</city>
+        <state>California</state>
+        <country>USA</country>
+        <company>Mucik Master</company>
+        <price>8.70</price>
+        <year>1995</year>
+    </stops>
+    <stops>
+        <city>New York City</city>
+        <state>New York</state>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>9.90</price>
+        <year>1997</year>
+    </stops>
+
+
+</vacation>
+

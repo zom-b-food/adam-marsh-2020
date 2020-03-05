@@ -1,0 +1,33 @@
+{
+    "files": [
+        {
+            "source": "./assets/compiled/_am-v2.min.js",
+            "type": "SCRIPT",
+            "size": 15.096,
+            "stopExecution": false
+        },
+        {
+            "source": "./assets/js/jquery-2.1.3.min.js",
+            "type": "SCRIPT",
+            "size": 8.096,
+            "stopExecution": true
+        },
+        {
+            "source": "./assets/js/materialize.min.js",
+            "type": "SCRIPT",
+            "size": 18.096,
+            "stopExecution": true
+        },
+        {
+            "source": "./assets/compiled/_am-v2.min.css",
+            "type": "CSS",
+            "size": 12.819
+        },
+        {
+            "source": "./assets/compiled/components.css",
+            "type": "CSS",
+            "size": 11.336
+        }
+    ]
+
+}

@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML 2006 (www.liquid-technologies.com) for Computer Associates-->
+<XPS xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+    <XPSVersion>1</XPSVersion>
+    <PolicyData IsDumpExport="false">
+        <References>
+            <ReferenceObject ReferenceId="Ref00001" ObjectClass="CA.SM::AgentGroup">
+                <Xid>CA.SM::AgentGroup@02-00017c6e-c2f1-12d2-ac50-8300d5b0fdf2</Xid>
+                <Attribute Name="CA.SM::AgentGroup.AgentTypeLink" Type="Comment">
+                    <LinkValue>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</LinkValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Desc" Type="Comment">
+                    <StringValue>Group for mychart agents</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Name" Type="Identity">
+                    <StringValue>agtg-epchart</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00002" ObjectClass="CA.SM::AgentGroup">
+                <Xid>CA.SM::AgentGroup@02-268a0074-d8a1-1006-bab4-832f18700cb3</Xid>
+                <Attribute Name="CA.SM::AgentGroup.AgentTypeLink" Type="Comment">
+                    <LinkValue>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</LinkValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Desc" Type="Comment">
+                    <StringValue>For member-mobile access</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Name" Type="Identity">
+                    <StringValue>agtg-mobile</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00003" ObjectClass="CA.SM::AgentGroup">
+                <Xid>CA.SM::AgentGroup@02-8e199280-9b85-102e-a99e-832f18700cb3</Xid>
+                <Attribute Name="CA.SM::AgentGroup.AgentTypeLink" Type="Comment">
+                    <LinkValue>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</LinkValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Desc" Type="Comment">
+                    <StringValue>IIS/E-24 web server</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Name" Type="Identity">
+                    <StringValue>agtg-momiis</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00004" ObjectClass="CA.SM::AgentGroup">
+                <Xid>CA.SM::AgentGroup@02-95123200-d2e9-1028-8d6d-841e42f10000</Xid>
+                <Attribute Name="CA.SM::AgentGroup.AgentTypeLink" Type="Comment">
+                    <LinkValue>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</LinkValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Desc" Type="Comment">
+                    <StringValue>Agents for mygh member sites</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentGroup.Name" Type="Identity">
+                    <StringValue>agtg-mygh-member</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00005" ObjectClass="CA.SM::AgentType">
+                <Xid>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</Xid>
+                <Attribute Name="CA.SM::AgentType.Desc" Type="Comment">
+                    <StringValue>SiteMinder Web Agent</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AgentType.Name" Type="Identity">
+                    <StringValue>Web Agent</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00006" ObjectClass="CA.SM::AgentTypeAttr">
+                <Xid>CA.SM::AgentTypeAttr@11-8d78bb90-ae15-11d1-9cdd-006008aac24b</Xid>
+                <Attribute Name="CA.SM::AgentTypeAttr.Name" Type="Identity">
+                    <StringValue>WebAgent-HTTP-Header-Variable</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00007" ObjectClass="CA.SM::AgentTypeAttr">
+                <Xid>CA.SM::AgentTypeAttr@11-8d78bb97-ae15-11d1-9cdd-006008aac24b</Xid>
+                <Attribute Name="CA.SM::AgentTypeAttr.Name" Type="Identity">
+                    <StringValue>WebAgent-HTTP-Cookie-Variable</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00008" ObjectClass="CA.SM::AuthScheme">
+                <Xid>CA.SM::AuthScheme@0d-000be5e7-8c18-1eb6-a769-8300d5b00000</Xid>
+                <Attribute Name="CA.SM::AuthScheme.Level" Type="Comment">
+                    <NumberValue>5</NumberValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Library" Type="Comment">
+                    <StringValue>smauthhtml</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Name" Type="Identity">
+                    <StringValue>aut-member-form</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Param" Type="Comment">
+                    <StringValue>https://member-dev.ghc.org/open/login/index.jhtml;ACS=0;REL=0</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00009" ObjectClass="CA.SM::AuthScheme">
+                <Xid>CA.SM::AuthScheme@0d-ff7c0ce8-d0fb-1021-bab4-832f18700cb3</Xid>
+                <Attribute Name="CA.SM::AuthScheme.Desc" Type="Comment">
+                    <StringValue>For mobile phone apps</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Level" Type="Comment">
+                    <NumberValue>5</NumberValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Library" Type="Comment">
+                    <StringValue>smauthhtml</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Name" Type="Identity">
+                    <StringValue>aut-mobile-form</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::AuthScheme.Param" Type="Comment">
+                    <StringValue>https://mobile-dev.ghc.org/mobile-mychart-webapp/login.htm;ACS=0;REL=0</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00010" ObjectClass="CA.SM::Response">
+                <Xid>CA.SM::Response@07-00002587-b219-1570-88b1-8300d5b00cb3</Xid>
+                <Attribute Name="CA.SM::Response.AccessAccept" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessChallenge" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessReject" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.Name" Type="Identity">
+                    <StringValue>Grsp-expire-portal-cookies</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00011" ObjectClass="CA.SM::Response">
+                <Xid>CA.SM::Response@07-0002d121-4fa8-132c-b013-8300d5b0fdf2</Xid>
+                <Attribute Name="CA.SM::Response.AccessAccept" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessChallenge" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessReject" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.Name" Type="Identity">
+                    <StringValue>Grsp-OnAuthReject</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00012" ObjectClass="CA.SM::Response">
+                <Xid>CA.SM::Response@07-0006250a-4f7b-132c-b013-8300d5b0fdf2</Xid>
+                <Attribute Name="CA.SM::Response.AccessAccept" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessChallenge" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessReject" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.Name" Type="Identity">
+                    <StringValue>Grsp-OnAuthAttempt</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00013" ObjectClass="CA.SM::Response">
+                <Xid>CA.SM::Response@07-00087d68-4f45-132c-b013-8300d5b0fdf2</Xid>
+                <Attribute Name="CA.SM::Response.AccessAccept" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessChallenge" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessReject" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.Name" Type="Identity">
+                    <StringValue>Grsp-OnAccessReject</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00014" ObjectClass="CA.SM::Response">
+                <Xid>CA.SM::Response@07-0009724a-b8e8-1314-9116-8300d5b0fdf2</Xid>
+                <Attribute Name="CA.SM::Response.AccessAccept" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessChallenge" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.AccessReject" Type="Comment">
+                    <BooleanValue>true</BooleanValue>
+                </Attribute>
+                <Attribute Name="CA.SM::Response.Name" Type="Identity">
+                    <StringValue>Grsp-onAccessAccept</StringValue>
+                </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00015" ObjectClass="CA.SM::UserDirectory">
+                <Xid>CA.SM::UserDirectory@0e-6aa3309c-ba76-1026-8d6d-841e42f10000</Xid>
+                <Attribute Name="CA.SM::UserDirectory.Desc" Type="Comment">
+                    <StringValue>Member directory</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::UserDirectory.Name" Type="Identity">
+                    <StringValue>ghc-member</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::UserDirectory.Namespace" Type="Comment">
+                    <StringValue>LDAP:</StringValue>
+                </Attribute>
+                <Attribute Name="CA.SM::UserDirectory.Server" Type="Comment">
+                    <StringValue>ldap-dev.ghc.org</StringValue>
+                </Attribute>
+            </ReferenceObject>
+        </References>
+        <Object Class="CA.SM::Domain" Xid="CA.SM::Domain@03-dc6c0a24-51ec-1027-8d6d-841e42f10000"
+                CreatedDateTime="2012-02-01T19:49:39" ModifiedDateTime="2012-03-09T19:37:40" UpdatedBy="nortde1"
+                UpdateMethod="GUI" ExportType="Replace">
+            <Property Name="CA.SM::Domain.Desc">
+                <StringValue>MyGroup Health member resources</StringValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsAffiliate">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Mode">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Name">
+                <StringValue>member</StringValue>
+            </Property>
+            <Property Name="CA.SM::Domain.UserDirectoriesLink">
+                <LinkValue>
+                    <XREF>Ref00015</XREF>
+                </LinkValue>
+            </Property>
+            <Object Class="CA.SM::Policy" Xid="CA.SM::Policy@04-7ea24470-3cdd-1001-912b-841e42f10000"
+                    CreatedDateTime="2012-02-01T23:40:11" ModifiedDateTime="2012-03-09T19:19:27" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Policy.AllowAccess">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Desc">
+                    <StringValue>Access policy for MyChart</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.IsEnabled">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Name">
+                    <StringValue>pol-mychart</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.TimeRestriction">
+                    <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                </Property>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-0c1fd63c-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:54" ModifiedDateTime="2012-03-09T18:42:54" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-64750f84-76bb-1029-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-19a2f5c8-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:54" ModifiedDateTime="2012-03-09T18:42:54" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00014</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-d65beb7c-76bb-1029-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-26c95a44-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:55" ModifiedDateTime="2012-03-09T18:42:55" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-255ce084-76ba-1029-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-34549f5c-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:55" ModifiedDateTime="2012-03-09T18:42:55" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00012</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-f28b54c8-76ba-1029-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-455939fc-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:55" ModifiedDateTime="2012-03-09T18:42:55" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-42ae40b4-633d-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-51bda1ec-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:55" ModifiedDateTime="2012-03-09T18:42:55" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-160f7294-640f-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-5e141fc0-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:56" ModifiedDateTime="2012-03-09T18:42:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00012</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-35db87e8-640f-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-6ac95f64-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:56" ModifiedDateTime="2012-03-09T18:42:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-52d51800-640f-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-76e2bc64-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:56" ModifiedDateTime="2012-03-09T18:42:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00014</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-70f3fd10-640f-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-839645c0-6493-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:42:56" ModifiedDateTime="2012-03-09T18:42:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00011</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-cb229508-640f-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::UserPolicy" Xid="CA.SM::UserPolicy@0f-b997a778-6b09-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T20:41:21" ModifiedDateTime="2012-03-09T20:41:21" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::UserPolicy.FilterClass">
+                        <StringValue>Search Users</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterPath">
+                        <StringValue>(&amp;(nsroledn~=cn=mychartcsr,ou=member,dc=ghc,dc=org)(nsroledn~=cn=authcsr,ou=member,dc=ghc,dc=org))</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyFlags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyResolution">
+                        <NumberValue>3</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.UserDirectoryLink">
+                        <LinkValue>
+                            <XREF>Ref00015</XREF>
+                        </LinkValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Policy" Xid="CA.SM::Policy@04-b016e6b4-7bf3-1001-912b-841e42f10000"
+                    CreatedDateTime="2012-02-01T18:56:11" ModifiedDateTime="2012-02-22T18:56:11" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Policy.AllowAccess">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Desc">
+                    <StringValue>Access policy for authorized members</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.IsEnabled">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Name">
+                    <StringValue>pol-authcsr</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.TimeRestriction">
+                    <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                </Property>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-d9521670-7bf3-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:12" ModifiedDateTime="2012-02-22T18:56:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-e7a804ac-9cd1-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-f5da2db4-7bf3-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:12" ModifiedDateTime="2012-02-22T18:56:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-5be350f0-9cd3-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-001a3f08-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:13" ModifiedDateTime="2012-02-22T18:56:13" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-c5d457c0-9cd3-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-0bf049a8-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:13" ModifiedDateTime="2012-02-22T18:56:13" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-2ef322a4-9cd4-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-2bdcb51c-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:13" ModifiedDateTime="2012-02-22T18:56:13" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-8186f470-9cd7-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-35ebed5c-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:13" ModifiedDateTime="2012-02-22T18:56:13" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-07e2bd24-9cd8-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-4146c03c-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:14" ModifiedDateTime="2012-02-22T18:56:14" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-74a09828-9cd8-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-4b3f953c-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:14" ModifiedDateTime="2012-02-22T18:56:14" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-e0a69d74-9cd8-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-56440990-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:14" ModifiedDateTime="2012-02-22T18:56:14" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-bcbcc5a4-9cd9-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-81526f28-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:15" ModifiedDateTime="2012-02-22T18:56:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-6f1a8268-9cdf-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-8c109e6c-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:15" ModifiedDateTime="2012-02-22T18:56:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-51bf492c-9ce1-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-9649d6a0-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:15" ModifiedDateTime="2012-02-22T18:56:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-3e02e384-9ce2-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-a07d5598-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:15" ModifiedDateTime="2012-02-22T18:56:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-00f33240-9ce3-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-ab49d938-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:15" ModifiedDateTime="2012-02-22T18:56:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-3346d538-9ce5-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-bfc68208-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:16" ModifiedDateTime="2012-02-22T18:56:16" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-fa1a2574-9ce6-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-ca348ce4-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:16" ModifiedDateTime="2012-02-22T18:56:16" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-6cf94cb4-9ce7-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-d3fa39cc-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:16" ModifiedDateTime="2012-02-22T18:56:16" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-dc72aab8-9ce7-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-dde1c248-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:16" ModifiedDateTime="2012-02-22T18:56:16" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-d0d86b94-9ceb-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-e758cb8c-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:16" ModifiedDateTime="2012-02-22T18:56:16" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-8dd8346c-9ced-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-f17ce5e4-7bf4-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:17" ModifiedDateTime="2012-02-22T18:56:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-7955e8ac-9cef-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-000a7f68-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:17" ModifiedDateTime="2012-02-22T18:56:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-35c8be50-9cf1-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-0b9187dc-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:17" ModifiedDateTime="2012-02-22T18:56:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-28d4b418-9cf3-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-159b1acc-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:17" ModifiedDateTime="2012-02-22T18:56:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-86bc5bac-9cf4-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-20e96190-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:17" ModifiedDateTime="2012-02-22T18:56:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-bd53e09c-9cfc-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-2a40cb20-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:17" ModifiedDateTime="2012-02-22T18:56:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-a7a4d114-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-34ad2c98-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:18" ModifiedDateTime="2012-02-28T23:36:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00011</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-c13dc748-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-3e3650a0-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:18" ModifiedDateTime="2012-02-28T23:36:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00014</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-d8d1b874-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-47b10d8c-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:18" ModifiedDateTime="2012-02-28T23:30:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00012</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-f0f145dc-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-520ba648-7bf5-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:18" ModifiedDateTime="2012-02-28T23:30:18" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-05b2f3d0-3e76-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-4ba9465c-5105-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:11:34" ModifiedDateTime="2012-02-28T18:11:34" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-8b63ee6c-9ce6-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-03c457b8-5b88-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T21:24:08" ModifiedDateTime="2012-02-28T21:24:08" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-e6ba055c-5b85-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-e651dc14-62bc-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:36:12" ModifiedDateTime="2012-02-28T23:36:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-255ce084-76ba-1029-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-7edf3b70-e957-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T05:04:47" ModifiedDateTime="2012-03-08T05:04:47" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-ceeeda50-e8d8-1005-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-401e7050-e85c-1005-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-8aea38c0-e957-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T05:04:47" ModifiedDateTime="2012-03-08T05:04:47" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-56ab1210-e85c-1005-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-96c2996c-e957-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T05:04:47" ModifiedDateTime="2012-03-08T05:04:47" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-702e6340-e85c-1005-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-a4727d20-e957-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T05:04:47" ModifiedDateTime="2012-03-08T05:04:47" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-ceeeda50-e8d8-1005-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-868f9834-e85c-1005-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-ebc7728c-1af0-1006-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T20:13:38" ModifiedDateTime="2012-03-08T20:13:38" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-f1fb717c-9cd2-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-ff9f21c4-1af0-1006-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T20:13:38" ModifiedDateTime="2012-03-09T17:46:21" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-7541de2c-9cdd-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-165a70bc-1af1-1006-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T20:13:38" ModifiedDateTime="2012-03-08T20:13:38" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-6a6359f8-9cde-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::UserPolicy" Xid="CA.SM::UserPolicy@0f-cd8a2a44-7bf3-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T18:56:12" ModifiedDateTime="2012-03-08T20:08:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::UserPolicy.FilterClass">
+                        <StringValue>Search Users</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterPath">
+                        <StringValue>(nsroledn=cn=authcsr,ou=member,dc=ghc,dc=org)</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyFlags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyResolution">
+                        <NumberValue>3</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.UserDirectoryLink">
+                        <LinkValue>
+                            <XREF>Ref00015</XREF>
+                        </LinkValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Policy" Xid="CA.SM::Policy@04-77206838-2942-1002-912b-841e42f10000"
+                    CreatedDateTime="2012-02-01T23:51:55" ModifiedDateTime="2012-02-24T23:51:55" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Policy.AllowAccess">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Desc">
+                    <StringValue>Policy for registered members</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.IsEnabled">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Name">
+                    <StringValue>pol-regcsr</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.TimeRestriction">
+                    <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                </Property>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-8c747224-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:55" ModifiedDateTime="2012-02-24T23:51:55" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-975971cc-9cd4-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-9757f030-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:56" ModifiedDateTime="2012-02-24T23:51:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-25011bec-9cda-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-a49bccd0-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:56" ModifiedDateTime="2012-02-24T23:51:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-21b59268-9ce6-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-aedc7a64-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:56" ModifiedDateTime="2012-03-07T21:58:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00013</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-a7a4d114-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-b8923b84-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:56" ModifiedDateTime="2012-02-24T23:51:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-c13dc748-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-c27d622c-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:56" ModifiedDateTime="2012-03-07T21:58:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00014</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-d8d1b874-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-cc09fdb4-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:56" ModifiedDateTime="2012-03-07T21:58:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00012</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-f0f145dc-3e75-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-d6d0b300-2942-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T23:51:57" ModifiedDateTime="2012-03-07T21:58:49" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-05b2f3d0-3e76-1001-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-aeef7c1c-29de-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:03:06" ModifiedDateTime="2012-02-25T00:03:06" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-0a2129d4-29dd-1002-912b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-8b3b6d7c-5b0f-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T21:15:31" ModifiedDateTime="2012-03-07T21:58:49" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XREF>Ref00010</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-28d4b418-9cf3-1028-8d6d-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-9240ea14-24d1-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T23:14:38" ModifiedDateTime="2012-03-08T23:14:38" UpdatedBy="kriegr1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-5c47f450-24a1-1006-996b-841e42f10000</XID>
+                        </LinkValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::UserPolicy" Xid="CA.SM::UserPolicy@0f-cb8ceea4-d29b-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T22:08:11" ModifiedDateTime="2012-03-07T22:08:11" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::UserPolicy.FilterClass">
+                        <StringValue>Search Users</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterPath">
+                        <StringValue>(nsroledn=cn=regcsr,ou=member,dc=ghc,dc=org)</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyFlags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyResolution">
+                        <NumberValue>3</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.UserDirectoryLink">
+                        <LinkValue>
+                            <XREF>Ref00015</XREF>
+                        </LinkValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-e8b70adc-993e-1028-8d6d-841e42f10000"
+                    CreatedDateTime="2012-02-01T23:47:34" ModifiedDateTime="2012-02-17T16:06:03" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Realm.AgentGroupLink">
+                    <LinkValue>
+                        <XREF>Ref00004</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00008</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>1800</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>rlm-member</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-e7a804ac-9cd1-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:04" ModifiedDateTime="2012-02-14T00:53:04" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-forms-member</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>forms/member*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-f1fb717c-9cd2-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:08" ModifiedDateTime="2012-02-14T00:53:08" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-pharmacy-ajax</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>pharmacy-webapp/ajax*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-5be350f0-9cd3-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:10" ModifiedDateTime="2012-02-14T00:53:10" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-basicservices</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>basicServices/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-c5d457c0-9cd3-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:12" ModifiedDateTime="2012-02-14T00:53:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-formulary-drugClassSearch</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/formulary/drugClassSearch*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-2ef322a4-9cd4-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:14" ModifiedDateTime="2012-02-14T00:53:14" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-formulary-drugSearchCriteria</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/formulary/drugSearchCriteria*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-975971cc-9cd4-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:15" ModifiedDateTime="2012-02-14T00:53:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-ssi-scripts</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>ssi/scripts/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-8186f470-9cd7-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:28" ModifiedDateTime="2012-02-14T00:53:28" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-providerDirectoryPrism</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>ProviderDirectoryPrism/servlets*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-07e2bd24-9cd8-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:30" ModifiedDateTime="2012-02-14T00:53:30" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-benefitsOnline-LoadPage</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/benefitsOnline/benefitsOnlineLoadPage*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-74a09828-9cd8-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:32" ModifiedDateTime="2012-02-14T00:53:32" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-prescription-transfer</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>prescription-transfer-webapp*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-e0a69d74-9cd8-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:34" ModifiedDateTime="2012-02-14T00:53:34" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-enhancedservices</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>enhancedservices/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-4e823998-9cd9-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:36" ModifiedDateTime="2012-02-14T00:53:36" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-consumerAdmin-consumerInfo</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/consumerAdmin/consumerInformation*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-bcbcc5a4-9cd9-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:38" ModifiedDateTime="2012-02-14T00:53:38" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                        <StringValue>Put</StringValue>
+                        <StringValue>DELETE</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-CardManagement</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>card-management*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-25011bec-9cda-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:39" ModifiedDateTime="2012-02-14T00:53:39" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-cgi-bin</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>cgi-bin/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-87b6fb74-9cdc-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:50" ModifiedDateTime="2012-02-14T00:53:50" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-deny-account-upgrade</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>basicServices/registration/index.jhtml*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-7541de2c-9cdd-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:54" ModifiedDateTime="2012-02-14T00:53:54" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                        <StringValue>DELETE</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-pharmacy-webapp</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>pharmacy-webapp/member*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-6a6359f8-9cde-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:53:59" ModifiedDateTime="2012-02-14T00:53:59" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-pharmacy-error</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>pharmacy-webapp/error*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-6f1a8268-9cdf-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:03" ModifiedDateTime="2012-02-14T00:54:03" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-usageStatus-Criteria</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/usageStatus/usageStatusCriteriaAction*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-66c6f2bc-9ce0-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:07" ModifiedDateTime="2012-02-14T00:54:07" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-consumerAdmin-resetPassword</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/consumerAdmin/resetPassword*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-51bf492c-9ce1-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:11" ModifiedDateTime="2012-02-14T00:54:11" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-benefitsOnline-pdf</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>benefitsOnline/pdf/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-3e02e384-9ce2-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:15" ModifiedDateTime="2012-02-14T00:54:15" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-formulary-drugNameSearch</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/formulary/drugNameSearch*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-00f33240-9ce3-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:17" ModifiedDateTime="2012-02-14T00:54:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-YourHealthProfile-hraDetail</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/YourHealthProfile/hraDetail*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-3346d538-9ce5-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:27" ModifiedDateTime="2012-02-14T00:54:27" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-YourHealthProfile-Disclaimer</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/YourHealthProfile/Disclaimer*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-9f7de5fc-9ce5-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:29" ModifiedDateTime="2012-02-14T00:54:29" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-consumerAdmin-enhanceConsumer</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/consumerAdmin/enhanceConsumer*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-21b59268-9ce6-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:31" ModifiedDateTime="2012-02-14T00:54:31" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-logout-page</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/framework/logout*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-8b63ee6c-9ce6-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:33" ModifiedDateTime="2012-02-14T00:54:33" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-lab-manageLabMailersAction</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/lab/manageLabMailersAction*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-fa1a2574-9ce6-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:34" ModifiedDateTime="2012-02-14T00:54:34" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-EOB-summarySearch</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/eob/eobsummarysearch*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-6cf94cb4-9ce7-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:36" ModifiedDateTime="2012-02-14T00:54:36" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-EOB-detailSearch</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/eob/eobdetailsearch*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-dc72aab8-9ce7-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:38" ModifiedDateTime="2012-02-14T00:54:38" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-CDHP-redirect</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/cdhp/CDHPredirect*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-d0d86b94-9ceb-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:54:57" ModifiedDateTime="2012-02-14T00:54:57" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-benefitsOnline-search</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/benefitsOnline/benefitsOnlineSearch*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-8dd8346c-9ced-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:04" ModifiedDateTime="2012-02-14T00:55:04" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-html-member</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>html/member*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-7955e8ac-9cef-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:12" ModifiedDateTime="2012-02-14T00:55:12" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-YourHealthProfile-SSO</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/YourHealthProfile/SSO*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-35c8be50-9cf1-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:20" ModifiedDateTime="2012-02-14T00:55:20" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-webroot</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-28d4b418-9cf3-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:28" ModifiedDateTime="2012-02-14T00:55:28" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessAccept-logout</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>logout.jhtml</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-86bc5bac-9cf4-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:33" ModifiedDateTime="2012-02-14T00:55:33" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-YourHealthProfile-hraList</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/YourHealthProfile/hraList*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-e033cb68-9cf7-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:48" ModifiedDateTime="2012-02-14T00:55:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-staff-panelAdmin-updatePractitionerPanel</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/panelAdmin/updatePractitionerPanel*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-d400d740-9cf8-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:52" ModifiedDateTime="2012-02-14T00:55:52" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-staff-panelAdmin-careSitePractitionerSearch</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/panelAdmin/careSitePractitionerSearchCriteria*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-ca27eeec-9cf9-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:56" ModifiedDateTime="2012-02-14T00:55:56" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-staff-panelAdmin-careSitePractitionerDetail</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/panelAdmin/careSitePractitionerDetail*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-c2f2e9f0-9cfa-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:55:59" ModifiedDateTime="2012-02-14T00:55:59" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-staffAdmin-confirmUser</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/staffAdmin/confirmUser*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-507bd100-9cfc-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:56:06" ModifiedDateTime="2012-02-14T00:56:06" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-staffAdmin-changeStaffPassword</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/staffAdmin/changeStaffPassword*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-bd53e09c-9cfc-1028-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:56:08" ModifiedDateTime="2012-02-14T00:56:08" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-usageStatus-DetailSearch</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/usageStatus/usageStatusDetailSearchAction*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-a7a4d114-3e75-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:09:24" ModifiedDateTime="2012-02-22T00:09:24" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-c13dc748-3e75-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:09:24" ModifiedDateTime="2012-02-22T00:09:24" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-d8d1b874-3e75-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:09:25" ModifiedDateTime="2012-02-22T00:09:25" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-f0f145dc-3e75-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:09:25" ModifiedDateTime="2012-02-22T00:09:25" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-05b2f3d0-3e76-1001-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:09:25" ModifiedDateTime="2012-02-22T00:09:25" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-0a2129d4-29dd-1002-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T00:02:59" ModifiedDateTime="2012-02-25T00:02:59" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>For access to secure home page</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-home</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>home*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-e6ba055c-5b85-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T21:23:59" ModifiedDateTime="2012-02-28T21:23:59" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-member-YourHealthProfile-Index</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>controller/YourHealthProfile/Index*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-5c47f450-24a1-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T23:11:11" ModifiedDateTime="2012-03-08T23:11:11" UpdatedBy="kriegr1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Put</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-account</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>account/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-80cedf10-76b7-1029-8d6d-841e42f10000"
+                    CreatedDateTime="2012-02-01T19:25:52" ModifiedDateTime="2012-02-17T16:07:24" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Realm.AgentGroupLink">
+                    <LinkValue>
+                        <XREF>Ref00002</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00009</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Desc">
+                    <StringValue>For mobile member site access</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>1800</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>rlm-mobile</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/mobile-mychart-webapp</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-255ce084-76ba-1029-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T19:26:04" ModifiedDateTime="2012-02-16T19:26:04" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-f28b54c8-76ba-1029-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T19:26:07" ModifiedDateTime="2012-02-16T19:26:07" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-64750f84-76bb-1029-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T19:26:09" ModifiedDateTime="2012-02-28T21:31:08" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>Allow access to epic data via mobile</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-allow-mobile-access</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-d65beb7c-76bb-1029-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T19:26:11" ModifiedDateTime="2012-02-16T19:26:11" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-62e52c10-76bd-1029-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T19:26:17" ModifiedDateTime="2012-02-16T19:26:17" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-d400d2f0-76bd-1029-8d6d-841e42f10000"
+                        CreatedDateTime="2012-02-01T19:26:19" ModifiedDateTime="2012-02-16T19:26:19" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-b98620c4-ba97-1029-8d6d-841e42f10000"
+                    CreatedDateTime="2012-02-01T16:09:38" ModifiedDateTime="2012-03-08T04:02:39" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Realm.AgentGroupLink">
+                    <LinkValue>
+                        <XREF>Ref00003</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00008</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Desc">
+                    <StringValue>For E-2 Health Profile</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>300</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>rlm-momentum</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-401e7050-e85c-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:46:48" ModifiedDateTime="2012-03-08T04:46:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-56ab1210-e85c-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:46:48" ModifiedDateTime="2012-03-08T04:46:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-702e6340-e85c-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:46:48" ModifiedDateTime="2012-03-08T04:46:48" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-868f9834-e85c-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:46:49" ModifiedDateTime="2012-03-08T04:46:49" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                        <StringValue>head</StringValue>
+                        <StringValue>debug</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>global allow</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-allowAccess</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-8521abfc-62cf-1006-996b-841e42f10000"
+                    CreatedDateTime="2012-03-01T18:10:35" ModifiedDateTime="2012-03-09T18:33:21" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Realm.AgentGroupLink">
+                    <LinkValue>
+                        <XREF>Ref00001</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00008</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Desc">
+                    <StringValue>For IIS/Epic mychart resources</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>3600</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>7200</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>rlm-mychart</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/mychart</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-42ae40b4-633d-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:18:27" ModifiedDateTime="2012-03-09T18:18:27" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>Provider access to /mychart</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-allow-access</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-160f7294-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:28" ModifiedDateTime="2012-03-09T18:33:28" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-35db87e8-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:28" ModifiedDateTime="2012-03-09T18:33:28" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthAttempt</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-52d51800-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:29" ModifiedDateTime="2012-03-09T18:33:29" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>Denies status change for all not explicitly allowed</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-Deny-setStatus</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/setStatus/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-70f3fd10-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:29" ModifiedDateTime="2012-03-09T18:33:29" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessAccept</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-8e0ba448-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:30" ModifiedDateTime="2012-03-09T18:33:30" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAccessReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAccessReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-abf4552c-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:30" ModifiedDateTime="2012-03-09T18:33:30" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>Allows status change for cust service rep</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-Allow-setStatus</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/setStatus/setstatuswebservice.asp*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-cb229508-640f-1006-996b-841e42f10000"
+                        CreatedDateTime="2012-03-01T18:33:31" ModifiedDateTime="2012-03-09T18:33:31" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>OnAuthReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>rul-OnAuthReject</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Response" Xid="CA.SM::Response@07-01a89a44-6005-1003-912b-841e42f10000"
+                    CreatedDateTime="2012-02-01T22:46:23" ModifiedDateTime="2012-02-28T22:46:23" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Response.AccessAccept">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessChallenge">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessReject">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AgentTypeLink">
+                    <LinkValue>
+                        <XREF>Ref00005</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Response.Desc">
+                    <StringValue>headers and cookies for ALL member domain responses</StringValue>
+                </Property>
+                <Property Name="CA.SM::Response.Name">
+                    <StringValue>rsp-set-http-headers</StringValue>
+                </Property>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-85d62980-6005-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:46:25" ModifiedDateTime="2012-02-28T22:52:21" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00006</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>ghc_user_roledn=&lt;%userattr="nsroledn"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-11859eb4-6058-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:52:20" ModifiedDateTime="2012-02-28T22:52:20" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00006</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>GHC_UID=&lt;%userattr="uid"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-2032c978-6058-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:52:20" ModifiedDateTime="2012-02-28T22:52:20" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00007</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>ghc_sm_username=&lt;%userattr="sm_username"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-37e8ffb0-6058-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:52:21" ModifiedDateTime="2012-02-28T22:52:21" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00006</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>GHC_ROLES=&lt;%userattr="nsroledn"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-459e7f54-6058-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:52:21" ModifiedDateTime="2012-02-28T22:52:21" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00006</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>GHC_LOGIN_ALIAS=&lt;%userattr="ghcLoginAlias"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-5dde4d60-6058-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:52:21" ModifiedDateTime="2012-02-28T22:52:21" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00007</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>VIS-MEMBER=&lt;%userattr="uid"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-725ad948-6058-1003-912b-841e42f10000"
+                        CreatedDateTime="2012-02-01T22:52:22" ModifiedDateTime="2012-02-28T22:52:22" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00007</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>ghc_authentication=member</StringValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::Response" Xid="CA.SM::Response@07-ceeeda50-e8d8-1005-912b-841e42f10000"
+                    CreatedDateTime="2012-03-01T04:55:42" ModifiedDateTime="2012-03-08T04:55:42" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::Response.AccessAccept">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessChallenge">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessReject">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AgentTypeLink">
+                    <LinkValue>
+                        <XREF>Ref00005</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Response.Name">
+                    <StringValue>rsp-setE24-headers</StringValue>
+                </Property>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-9d8aa650-e8d9-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:55:46" ModifiedDateTime="2012-03-08T04:55:46" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00006</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>ghc_mrn=&lt;%userattr="uid"%&gt;</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-aa284b60-e8d9-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:55:46" ModifiedDateTime="2012-03-08T04:55:46" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00007</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>ghc_authenticated=member</StringValue>
+                    </Property>
+                </Object>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-b656128c-e8d9-1005-912b-841e42f10000"
+                        CreatedDateTime="2012-03-01T04:55:46" ModifiedDateTime="2012-03-08T04:55:46" UpdatedBy="nortde1"
+                        UpdateMethod="GUI" ExportType="No">
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00007</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>e24_login=TRUE</StringValue>
+                    </Property>
+                </Object>
+            </Object>
+            <Object Class="CA.SM::RuleGroup" Xid="CA.SM::RuleGroup@0c-1d85adac-62e8-1003-912b-841e42f10000"
+                    CreatedDateTime="2012-02-01T23:39:18" ModifiedDateTime="2012-02-28T23:39:18" UpdatedBy="nortde1"
+                    UpdateMethod="GUI" ExportType="No">
+                <Property Name="CA.SM::RuleGroup.AgentTypeLink">
+                    <LinkValue>
+                        <XREF>Ref00005</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::RuleGroup.Name">
+                    <StringValue>rulg-member-pharmacy</StringValue>
+                </Property>
+                <Property Name="CA.SM::RuleGroup.RulesLink">
+                    <LinkValue>
+                        <XID>CA.SM::Rule@0b-f1fb717c-9cd2-1028-8d6d-841e42f10000</XID>
+                    </LinkValue>
+                    <LinkValue>
+                        <XID>CA.SM::Rule@0b-7541de2c-9cdd-1028-8d6d-841e42f10000</XID>
+                    </LinkValue>
+                    <LinkValue>
+                        <XID>CA.SM::Rule@0b-6a6359f8-9cde-1028-8d6d-841e42f10000</XID>
+                    </LinkValue>
+                </Property>
+            </Object>
+        </Object>
+    </PolicyData>
+</XPS>

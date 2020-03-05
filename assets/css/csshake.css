@@ -1,0 +1,154 @@
+/* * * * * * * * * * * * * * * * * * * * *\
+  CSShake :: Package
+  v1.5.0
+  CSS classes to move your DOM
+  (c) 2015 @elrumordelaluz
+  http://elrumordelaluz.github.io/csshake/
+  Licensed under MIT
+\* * * * * * * * * * * * * * * * * * * * */
+.shake, .shake-little, .shake-slow, .shake-slower, .shake-horizontal, .shake-vertical, .shake-rotate, .shake-opacity, .shake-crazy, .shake-chunk {
+  display: inline-block;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake:hover,
+.shake-trigger:hover .shake, .shake-little:hover,
+.shake-trigger:hover .shake-little, .shake-slow:hover,
+.shake-trigger:hover .shake-slow, .shake-slower:hover,
+.shake-trigger:hover .shake-slower, .shake-horizontal:hover,
+.shake-trigger:hover .shake-horizontal, .shake-vertical:hover,
+.shake-trigger:hover .shake-vertical, .shake-rotate:hover,
+.shake-trigger:hover .shake-rotate, .shake-opacity:hover,
+.shake-trigger:hover .shake-opacity, .shake-crazy:hover,
+.shake-trigger:hover .shake-crazy, .shake-chunk:hover,
+.shake-trigger:hover .shake-chunk {
+  animation-play-state: running; }
+
+.pulsate.left {
+-webkit-animation: pulsate 1.75s ease-out;
+-webkit-animation-iteration-count: infinite;
+    -ms-animation: pulsate 1.75s ease-out;
+    -ms-animation-iteration-count: infinite;
+
+    -moz-animation: pulsate 1.75s ease-out;
+    -moz-animation-iteration-count: infinite;
+
+    -o-animation: pulsate 1.75s ease-out;
+    -o-animation-iteration-count: infinite;
+}
+.pulsate.right {
+    -webkit-animation: pulsate 1.5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation: pulsate 1.5s ease-out;
+    -ms-animation-iteration-count: infinite;
+
+    -moz-animation: pulsate 1.5s ease-out;
+    -moz-animation-iteration-count: infinite;
+
+    -o-animation: pulsate 1.5s ease-out;
+    -o-animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1.00, 1.05); opacity: 0.8;
+
+    }
+    25% {
+        -webkit-transform: translate(2px, -1px) rotate(1deg);
+    }
+    50% {
+        opacity: 1.0;
+
+    }
+    75% {
+        -webkit-transform: translate(-1px, 2px) rotate(1deg);
+    }
+    100% {
+        -webkit-transform: scale(1.05, 1.00); opacity: 0.8;
+
+    }
+}
+@-moz-keyframes pulsate {
+    0% {
+        -moz-transform: scale(1.00, 1.05); opacity: 0.8;
+
+    }
+    25% {
+        -moz-transform: translate(2px, -1px) rotate(1deg);
+    }
+    50% {
+        opacity: 1.0;
+
+    }
+    75% {
+        -moz-transform: translate(-1px, 2px) rotate(1deg);
+    }
+    100% {
+        -moz-transform: scale(1.05, 1.00); opacity: 0.8;
+
+    }
+}
+
+@-ms-keyframes pulsate {
+    0% {
+        -ms-transform: scale(1.00, 1.05); opacity: 0.8;
+
+    }
+    25% {
+        -ms-transform: translate(2px, -1px) rotate(1deg);
+    }
+    50% {
+        opacity: 1.0;
+
+    }
+    75% {
+        -ms-transform: translate(-1px, 2px) rotate(1deg);
+    }
+    100% {
+        -ms-transform: scale(1.05, 1.00); opacity: 0.8;
+
+    }
+}
+
+@-o-keyframes pulsate {
+    0% {
+        -o-transform: scale(1.00, 1.05); opacity: 0.8;
+
+    }
+    25% {
+        -o-transform: translate(2px, -1px) rotate(1deg);
+    }
+    50% {
+        opacity: 1.0;
+
+    }
+    75% {
+        -o-transform: translate(-1px, 2px) rotate(1deg);
+    }
+    100% {
+        -o-transform: scale(1.05, 1.00); opacity: 0.8;
+
+    }
+}
+
+
+.shake-slow:hover,
+.shake-trigger:hover .shake-slow,
+.shake-slow.shake-freeze,
+.shake-slow.shake-constant {
+  animation: shake-slow 28s ease-in-out infinite; }
+
+
+.shake-slower:hover,
+.shake-trigger:hover .shake-slower,
+.shake-slower.shake-freeze,
+.shake-slower.shake-constant {
+    animation: shake-slower 36s ease-in-out infinite; }
+
+
+em {color:#B37C32;}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Movie Search App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		        crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.js"></script>
+		<script type='text/javascript'>//<![CDATA[
+		$(window).load(function () {
+			var $Form = $('form'), $Container = $('#container');
+			$Container.hide();
+			$Form.on('submit', function (p_oEvent) {
+				var sUrl, sMovie, oData;
+				p_oEvent.preventDefault();
+				sMovie = $Form.find('input').val();
+				sUrl = 'https://www.omdbapi.com/?t=' + sMovie + '&type=movie&tomatoes=true'
+				$.ajax(sUrl, {
+					complete: function (p_oXHR, p_sStatus) {
+						oData = $.parseJSON(p_oXHR.responseText);
+						//console.log(oData);
+						$Container.find('.title').text(oData.Title);
+						$Container.find('.plot').text(oData.Plot);
+						$Container.find('.poster').html('<img src="' + oData.Poster + '"/>');
+						$Container.find('.year').text(oData.Year);
+						$Container.find('.director').text(oData.Director);
+						$Container.find('.screenplay').text(oData.Writer);
+						$Container.find('.genre').text(oData.Genre);
+						$Container.find('.rating').text(oData.imdbRating);
+						$Container.show();
+					}
+				});
+			});
+
+		});//]]>
+		</script>
+		<style type="text/css">
+			h4:first-of-type {
+				margin-top: 8px;
+				margin-bottom: 4px;
+			}
+
+			h4 {
+				margin-top: 20px;
+				margin-bottom: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Magical
+
+						Movie Search
+						<small>by <a href="#">Ajax</a></small>
+					</h1>
+				</div>
+			</div>
+			<hr/>
+			<div class="row">
+				<div class="col-md-8">
+					<form>
+						<label>
+							<input type="text" name="movie" placeholder="movie title"/>
+						</label>
+						<button>Search for Movie</button>
+					</form>
+				</div>
+			</div>
+
+
+			<hr/>
+			<div id="container">
+				<div class="row">
+					<div class="col-sm-4 well">
+						<h4>Title:</h4>
+						<span class="title"></span>
+						<h4>IMDB Rating:</h4>
+						<span class="rating"></span>
+						<h4>Genre:</h4>
+						<span class="genre"></span>
+						<h4>Year:</h4>
+						<span class="year"></span>
+						<h4>Director:</h4>
+						<span class="director"></span>
+						<h4>Screenplay:</h4>
+						<span class="screenplay"></span>
+					</div>
+					<div class="col-sm-8">
+						<p class="plot"></p>
+						<span class="poster"></span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

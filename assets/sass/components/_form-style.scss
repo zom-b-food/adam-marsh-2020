@@ -1,0 +1,288 @@
+/* ================= Form Style ==================== */
+input.disabled, input.disabled:hover, .btn.disabled {
+    cursor: default;
+    width: auto;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #649eb4;
+    background: linear-gradient(#6e797d, #4d4d4d) repeat scroll 0% 0% transparent !important;
+    padding: 2px 10px;
+    color: #bec7ca;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
+
+/*
+Default Form Style
+--------------------------------------------*/
+.form-control {
+  border:1px solid rgba(255,255,255,.3) !important;
+}
+
+.control-label.left {
+  margin-left:-15px;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+	border: 1px solid #cacece;
+  width:33px;
+  margin-top:-1px;
+  float:left;
+  background-color:rgba(255,255,255,.3);
+}
+
+input[type=checkbox]:active, input[type=checkbox]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type=checkbox]:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+input[type=checkbox]:checked:after {
+	content: '\2713';
+	font-size: 25px;
+	top: 3px;
+	padding-left: 6px;
+	color: #976740;
+  font-weight:bold;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    border-bottom: 1px solid #9b9b9b;
+    font-size: 14px !important;
+    background-color:rgba(255,255,255,.3);
+}
+
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #03a9f4;
+    box-shadow: 0 1px 0 0 #03a9f4;
+}
+
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #03a9f4 !important;
+}
+
+textarea.materialize-textarea {
+    min-height: 60px !important;
+}
+
+/* Material Button Style
+/* ------------------------------ */
+.btn {
+
+    padding: 2px 10px;
+    font-size: 16px;
+    line-height: 14px;
+    border-radius: 2px;
+    background-color: #546E7A; /*brand primary color*/
+    border: 0;
+}
+
+.btn-lg {
+    padding: 12px 38px;
+}
+.am-splash {
+  opacity: 0.7;
+  border: 1px solid #023b2a;
+  background: -moz-linear-gradient(top, #064033 0, #020815 44%, #064033 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #064033), color-stop(44%, #020815), color-stop(100%, #064033));
+  background: -webkit-linear-gradient(top, #064033 0, #020815 44%, #064033 100%);
+  background: -o-linear-gradient(top, #064033 0, #020815 44%, #064033 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#020815', endColorstr='#064033', GradientType=0);
+  background: linear-gradient(top, #064033 0, #020815 44%, #064033 100%);
+  padding: 6px 8px;
+  color: $orange;
+  border-radius:3px;
+  margin-top:22px;
+}
+
+.am-splash:hover {
+  opacity: 1;
+  border: 1px solid #014a34;
+  background: -moz-linear-gradient(top, #02281f 0, #020815 44%, #02281f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #02281f), color-stop(44%, #020815), color-stop(100%, #02281f));
+  background: -webkit-linear-gradient(top, #02281f 0, #020815 44%, #02281f 100%);
+  background: -o-linear-gradient(top, #02281f 0, #020815 44%, #02281f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#020815', endColorstr='#02281f', GradientType=0);
+  background: linear-gradient(top, #02281f 0, #020815 44%, #02281f 100%);
+  padding: 6px 8px;
+  color: $pale-orange;
+}
+/*button size in extra small devices*/
+@media screen and (max-width: 767px) {
+    .btn-lg {
+        height: auto;
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+}
+
+.btn:hover{
+    background-color: #03a9f4;
+}
+
+.btn.active,
+.btn:active {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+.btn.white,
+.btn.white:hover,
+.btn.white:focus {
+    color: #03a9f4;
+}
+
+.btn i.material-icons {
+    font-size: 20px;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    color: #fff;
+}
+.btn:focus,
+button:focus {
+    outline: none !important;
+}
+
+/* Button Style In Shortcode Page
+/* ---------------------------------- */
+.button-style .btn,
+.button-style .btn-large {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.button-style .btn-floating i {
+    height: auto !important;
+}
+
+/*Download Button*/
+.btn-download {
+    padding: 16px 38px;
+    text-align: left;
+    line-height: 22px;
+    height: 75px;
+}
+.btn-download i{
+    font-size: 30px;
+    line-height: 48px;
+}
+.btn-download span{
+    display: block!important;
+    overflow: hidden;
+}
+.btn-download strong{
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.form-control {
+    border-radius: 0;
+}
+.input-field {
+    margin-top: 45px;
+}
+.input-field label {
+    color: #546E7A;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.input-field label.active {
+    font-size: 12px;
+}
+
+
+/*
+White Form Style
+------------------------------------------*/
+
+.white-form input[type=text],
+.white-form input[type=password],
+.white-form input[type=email],
+.white-form input[type=url],
+.white-form input[type=time],
+.white-form input[type=date],
+.white-form input[type=datetime-local],
+.white-form input[type=tel],
+.white-form input[type=number],
+.white-form input[type=search],
+.white-form textarea.materialize-textarea {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.white-form input[type=text]:focus:not([readonly]),
+.white-form input[type=password]:focus:not([readonly]),
+.white-form input[type=email]:focus:not([readonly]),
+.white-form input[type=url]:focus:not([readonly]),
+.white-form input[type=time]:focus:not([readonly]),
+.white-form input[type=date]:focus:not([readonly]),
+.white-form input[type=datetime-local]:focus:not([readonly]),
+.white-form input[type=tel]:focus:not([readonly]),
+.white-form input[type=number]:focus:not([readonly]),
+.white-form input[type=search]:focus:not([readonly]),
+.white-form textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+.white-form .input-field label,
+.white-form input[type=text]:focus:not([readonly]) + label,
+.white-form input[type=password]:focus:not([readonly]) + label,
+.white-form input[type=email]:focus:not([readonly]) + label,
+.white-form input[type=url]:focus:not([readonly]) + label,
+.white-form input[type=time]:focus:not([readonly]) + label,
+.white-form input[type=date]:focus:not([readonly]) + label,
+.white-form input[type=datetime-local]:focus:not([readonly]) + label,
+.white-form input[type=tel]:focus:not([readonly]) + label,
+.white-form input[type=number]:focus:not([readonly]) + label,
+.white-form input[type=search]:focus:not([readonly]) + label,
+.white-form textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #fff !important;
+}

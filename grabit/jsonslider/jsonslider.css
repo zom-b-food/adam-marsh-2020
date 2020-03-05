@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+div.body {
+    flex: 1 0 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
+
+#commentsWrapper {
+    margin-top: 46px;
+    width: 92%;
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+#my-slideview {
+    /*background-image: url(./../../images/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;*/
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.large-carousel .text {
+    display: inline-block;
+}
+
+.large-carousel {
+    margin: 0;
+}
+
+.large-carousel .text {
+    margin-bottom: .3em;
+}
+
+.large-carousel .slideview-pager {
+    position: absolute;
+    padding: 1em;
+    text-align: left;
+    margin-top: -92px;
+    margin-bottom: 64px;
+    margin-left: -13px;
+}
+
+.slideview {
+    position: relative;
+}
+
+.slideview:focus {
+    outline: none;
+}
+
+.slideview-track {
+    height: 272px;
+    width: 570px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2%;
+    padding-left: 0
+}
+
+.slideview-slide {
+    position: relative;
+    font-size: 4940%;
+    white-space: normal;
+    vertical-align: top;
+    width: 100%;
+}
+
+.slideview-slide,
+.slideview-slide .text {
+    display: inline-block;
+}
+
+.slideview-inner {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f1f5f6;
+    height: 171px;
+    position: relative;
+    top: 36px;
+}
+
+.slideview-outter {
+    position: absolute;
+    right: 0;
+    top: 214px;
+    padding: 5%;
+}
+
+.slideview-slide .text {
+    color: #748d6a;
+    padding-top: 34px;
+    text-align: center;
+}
+
+.slideview-slide .name {
+    color: #748d6a;
+    padding-top: 10px;
+}
+
+.slideview-previous {
+    display: inline-block;
+    background-image: url(prev.png);
+    height: 31px;
+    width: 34px;
+}
+
+.slideview-previous:hover {
+    display: inline-block;
+    background-image: url(prev-hover.png);
+    height: 31px;
+    width: 34px;
+}
+
+.slideview-next {
+    display: inline-block;
+    background-image: url(next.png);
+    height: 31px;
+    width: 34px;
+}
+
+.slideview-next:hover {
+    display: inline-block;
+    background-image: url(next-hover.png);
+    height: 31px;
+    width: 34px;
+}
+
+.credits {
+    height: 44px;
+    width: 226px;
+    text-align: center;
+}
+
+h2.text {
+    width: 90%;
+}

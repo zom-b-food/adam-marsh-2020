@@ -1,0 +1,30 @@
+h4 {
+    color: #771315;
+}
+
+p {
+    color: #771315;
+}
+
+a {
+    color: #983220;
+}
+
+pre {
+    width: 660px;
+    clear: both;
+    border: 2px dashed #983220;
+    border-left: 20px solid #983220;
+    font-size: 12px;
+    padding: 10px;
+    color: #808080;
+    background: #F1F1FF;
+    overflow: auto;
+    margin: 10px 0 10px 0;
+}
+
+#content {
+    clear: left;
+    width: 700px;
+    text-align: left;
+}

@@ -1,0 +1,30 @@
+[
+  {
+   "id": 1,
+   "tweet": "I got a new bone",
+   "usersMentioned": [
+     {
+      "id": 10,
+      "username": "Rutger"
+     }
+    ]
+  },
+  {
+   "id": 2,
+   "tweet": "A real steak bone!"
+  },
+  {
+   "id": 3,
+   "tweet": "Oh wait, it's a pork bone."
+  },
+  {
+   "id": 4,
+   "tweet": "OMG, it's sooo cruncky",
+   "usersMentioned": [
+     {
+      "id": 10,
+      "username": "Rufus"
+     }
+    ]
+  }
+]
