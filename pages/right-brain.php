@@ -307,9 +307,10 @@
                     <div class="col m8 pull-m4 col s12">
                         <div class="card blue-grey lighten-5 dots">
                             <div class="card-content black-text">
+
                                 <iframe id="contact" class="contact-info" width="100%" height="400"
-                                    src="../contact/contactForm/index.php" overflow="hidden" scrolling="no"
-                                    frameborder="0" allowfullscreen></iframe>
+                                    src="../contactForm/index.php" overflow="hidden" scrolling="no" frameborder="0"
+                                    allowfullscreen></iframe>
 
                             </div>
                         </div>
@@ -422,6 +423,7 @@ fclose($data);
     <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- RS5.0 Init  -->
     <script type="text/javascript">
+   
     jQuery(document).ready(function() {
         jQuery(".materialize-parallax").revolution({
             sliderType: "standard",

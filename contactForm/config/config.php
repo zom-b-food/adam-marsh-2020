@@ -2,11 +2,11 @@
 
 return [
     'subject' => [
-        'prefix' => '[Contact Form] adam-marsh.com'
+        'prefix' => '[adam-marsh.com Contact Form]'
     ],
     'emails' => [
         'to'   => 'am@adam-marsh.com',
-        'from' => '[Contact Form] adam-marsh.com'
+        'from' => '[Contact Form] from adam-marsh.com'
     ],
     'messages' => [
         'error'   => 'There was an error sending your message, please try again later.',

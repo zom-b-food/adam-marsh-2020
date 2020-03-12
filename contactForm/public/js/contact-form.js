@@ -60,7 +60,7 @@
                         email    = document.querySelector('#form-email'),
                         subject  = document.querySelector('#form-subject'),
                         message  = document.querySelector('#form-message'),
-                        human    = document.querySelector('#form-human'),
+                        
                         // @from: https://html.spec.whatwg.org/multipage/forms.html#e-mail-state-(type=email)
                         testmail = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
@@ -80,11 +80,6 @@
                     }
 
                     if (message.value === '') {
-                        hasError = true;
-                        this.addError(message);
-                    }
-
-                    if (human.value === '') {
                         hasError = true;
                         this.addError(message);
                     }
